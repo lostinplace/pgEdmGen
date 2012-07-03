@@ -1,0 +1,4 @@
+beginning ModelGen for Server=vpcpostgisbeta;Port=5432;UserId=geoserver;Password=Aviator%11;Database=NRPA_PRORAGIS
+modelgen completed for Server=vpcpostgisbeta;Port=5432;UserId=geoserver;Password=Aviator%11;Database=NRPA_PRORAGIS
+validating model Npgsql.edmx
+validation complete for model Npgsql.edmx

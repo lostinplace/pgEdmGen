@@ -1,0 +1,1 @@
+Warning: The data type 'geometry' is not supported; the column 'Geometry' in table 'NRPA_PRORAGIS.CreationArea.NRPA_Items' was excluded.

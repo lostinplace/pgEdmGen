@@ -1,0 +1,12 @@
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\pgEdmGen.exe.config
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\pgEdmGen.exe
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\pgEdmGen.pdb
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\EdmGen2.exe
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\Mono.Security.dll
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\policy.2.0.Npgsql.dll
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\ConceptualEdmGen.dll
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\EdmGen2.pdb
+C:\dev\tools\pgEdmGen\pgEdmGen\bin\Debug\policy.2.0.Npgsql.config
+C:\dev\tools\pgEdmGen\pgEdmGen\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\dev\tools\pgEdmGen\pgEdmGen\obj\x86\Debug\pgEdmGen.exe
+C:\dev\tools\pgEdmGen\pgEdmGen\obj\x86\Debug\pgEdmGen.pdb

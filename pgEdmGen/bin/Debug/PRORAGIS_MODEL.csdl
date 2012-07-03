@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PRORAGIS_MODEL" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="PRORAGIS_MODELContext">
+    <EntitySet Name="Addresses" EntityType="PRORAGIS_MODEL.Addresses" />
+    <EntitySet Name="CodedValues" EntityType="PRORAGIS_MODEL.CodedValues" />
+    <EntitySet Name="Facilities" EntityType="PRORAGIS_MODEL.Facilities" />
+    <EntitySet Name="NRPA_Items" EntityType="PRORAGIS_MODEL.NRPA_Items" />
+    <EntitySet Name="Parks" EntityType="PRORAGIS_MODEL.Parks" />
+    <EntitySet Name="Trails" EntityType="PRORAGIS_MODEL.Trails" />
+    <AssociationSet Name="CV_ParentKey_FK" Association="PRORAGIS_MODEL.CV_ParentKey_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="CodedValues1" EntitySet="CodedValues" />
+    </AssociationSet>
+    <AssociationSet Name="Facilities_AccessibilityStatus_CodedValue_FK" Association="PRORAGIS_MODEL.Facilities_AccessibilityStatus_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Facilities" EntitySet="Facilities" />
+    </AssociationSet>
+    <AssociationSet Name="Facilities_FacilityClass_FK" Association="PRORAGIS_MODEL.Facilities_FacilityClass_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Facilities" EntitySet="Facilities" />
+    </AssociationSet>
+    <AssociationSet Name="Facilities_FacilitySize_UOMArea" Association="PRORAGIS_MODEL.Facilities_FacilitySize_UOMArea">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Facilities" EntitySet="Facilities" />
+    </AssociationSet>
+    <AssociationSet Name="Facilities_FacilityType_FK" Association="PRORAGIS_MODEL.Facilities_FacilityType_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Facilities" EntitySet="Facilities" />
+    </AssociationSet>
+    <AssociationSet Name="Facilities_IndoorOutdoor_FK" Association="PRORAGIS_MODEL.Facilities_IndoorOutdoor_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Facilities" EntitySet="Facilities" />
+    </AssociationSet>
+    <AssociationSet Name="Facilities_Length_UOMDistance" Association="PRORAGIS_MODEL.Facilities_Length_UOMDistance">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Facilities" EntitySet="Facilities" />
+    </AssociationSet>
+    <AssociationSet Name="Facilities_NRPAItems_FK" Association="PRORAGIS_MODEL.Facilities_NRPAItems_FK">
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+      <End Role="Facilities" EntitySet="Facilities" />
+    </AssociationSet>
+    <AssociationSet Name="Facilities_Width_UOMDistance" Association="PRORAGIS_MODEL.Facilities_Width_UOMDistance">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Facilities" EntitySet="Facilities" />
+    </AssociationSet>
+    <AssociationSet Name="NRPA_Items_Addresses_FK" Association="PRORAGIS_MODEL.NRPA_Items_Addresses_FK">
+      <End Role="Addresses" EntitySet="Addresses" />
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+    </AssociationSet>
+    <AssociationSet Name="NRPAItems_AcquisitionMethod_CodedValue_FK" Association="PRORAGIS_MODEL.NRPAItems_AcquisitionMethod_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+    </AssociationSet>
+    <AssociationSet Name="NRPAItems_AcquisitionSource_CodedValue_FK" Association="PRORAGIS_MODEL.NRPAItems_AcquisitionSource_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+    </AssociationSet>
+    <AssociationSet Name="NRPAItems_AgencyType_FK" Association="PRORAGIS_MODEL.NRPAItems_AgencyType_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+    </AssociationSet>
+    <AssociationSet Name="NRPAItems_OtherProtections_CodedValue_FK" Association="PRORAGIS_MODEL.NRPAItems_OtherProtections_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+    </AssociationSet>
+    <AssociationSet Name="NRPAItems_OwnerType_CodedValue_FK" Association="PRORAGIS_MODEL.NRPAItems_OwnerType_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+    </AssociationSet>
+    <AssociationSet Name="NRPAItems_Status_CodedValue_FK" Association="PRORAGIS_MODEL.NRPAItems_Status_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+    </AssociationSet>
+    <AssociationSet Name="Parks_AcreSource_CodedValue_FK" Association="PRORAGIS_MODEL.Parks_AcreSource_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Parks" EntitySet="Parks" />
+    </AssociationSet>
+    <AssociationSet Name="Parks_DevelopmentSource_CodedValue_FK" Association="PRORAGIS_MODEL.Parks_DevelopmentSource_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Parks" EntitySet="Parks" />
+    </AssociationSet>
+    <AssociationSet Name="Parks_ManagementPriority_CodedValue_FK" Association="PRORAGIS_MODEL.Parks_ManagementPriority_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Parks" EntitySet="Parks" />
+    </AssociationSet>
+    <AssociationSet Name="Parks_NRPAItems_FK" Association="PRORAGIS_MODEL.Parks_NRPAItems_FK">
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+      <End Role="Parks" EntitySet="Parks" />
+    </AssociationSet>
+    <AssociationSet Name="Parks_Reference_CodedValue_FK" Association="PRORAGIS_MODEL.Parks_Reference_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Parks" EntitySet="Parks" />
+    </AssociationSet>
+    <AssociationSet Name="Parks_Restrictions_FK" Association="PRORAGIS_MODEL.Parks_Restrictions_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Parks" EntitySet="Parks" />
+    </AssociationSet>
+    <AssociationSet Name="Parks_ServiceArea_UOMDistance_FK" Association="PRORAGIS_MODEL.Parks_ServiceArea_UOMDistance_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Parks" EntitySet="Parks" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_AccessibilityStatus_FK" Association="PRORAGIS_MODEL.Trails_AccessibilityStatus_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_DesignedUse_CodedValue_FK" Association="PRORAGIS_MODEL.Trails_DesignedUse_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_DifficultyRating_CodedValue_FK" Association="PRORAGIS_MODEL.Trails_DifficultyRating_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_LengthSource_UOMMeasurementSource_FK" Association="PRORAGIS_MODEL.Trails_LengthSource_UOMMeasurementSource_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_LengthUnits_UOMDistance" Association="PRORAGIS_MODEL.Trails_LengthUnits_UOMDistance">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_MotorizedUse_FK" Association="PRORAGIS_MODEL.Trails_MotorizedUse_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_NRPAItems_FK" Association="PRORAGIS_MODEL.Trails_NRPAItems_FK">
+      <End Role="NRPA_Items" EntitySet="NRPA_Items" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_SystemType_CodedValue_FK" Association="PRORAGIS_MODEL.Trails_SystemType_CodedValue_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_TrailSurface_Codedvalues_FK" Association="PRORAGIS_MODEL.Trails_TrailSurface_Codedvalues_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+    <AssociationSet Name="Trails_WidthUnits_UOMDistance_FK" Association="PRORAGIS_MODEL.Trails_WidthUnits_UOMDistance_FK">
+      <End Role="CodedValues" EntitySet="CodedValues" />
+      <End Role="Trails" EntitySet="Trails" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Addresses">
+    <Key>
+      <PropertyRef Name="AddressKey" />
+    </Key>
+    <Property Name="AddressKey" Type="Int32" Nullable="false" />
+    <Property Name="AddressLine2" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="AddressLine3" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="City" Type="String" Nullable="true" FixedLength="false" MaxLength="50" Unicode="true" />
+    <Property Name="County" Type="String" Nullable="true" FixedLength="false" MaxLength="25" Unicode="true" />
+    <Property Name="State" Type="String" Nullable="false" FixedLength="false" MaxLength="2" Unicode="true" />
+    <Property Name="StreetNumber" Type="Int32" Nullable="true" />
+    <Property Name="StreetName" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="StreetType" Type="String" Nullable="true" FixedLength="false" MaxLength="10" Unicode="true" />
+    <Property Name="PostalCode" Type="String" Nullable="true" FixedLength="false" MaxLength="10" Unicode="true" />
+    <NavigationProperty Name="NRPA_Items" Relationship="PRORAGIS_MODEL.NRPA_Items_Addresses_FK" FromRole="Addresses" ToRole="NRPA_Items" />
+  </EntityType>
+  <EntityType Name="CodedValues">
+    <Key>
+      <PropertyRef Name="CodeKey" />
+    </Key>
+    <Property Name="CategoryName" Type="String" Nullable="false" FixedLength="false" MaxLength="100" Unicode="true" />
+    <Property Name="CodeKey" Type="Int32" Nullable="false" />
+    <Property Name="CategoryValue" Type="String" Nullable="false" FixedLength="false" MaxLength="100" Unicode="true" />
+    <Property Name="CategoryDescription" Type="String" Nullable="true" FixedLength="false" MaxLength="255" Unicode="true" />
+    <NavigationProperty Name="CodedValues1" Relationship="PRORAGIS_MODEL.CV_ParentKey_FK" FromRole="CodedValues" ToRole="CodedValues1" />
+    <NavigationProperty Name="CodedValues11" Relationship="PRORAGIS_MODEL.CV_ParentKey_FK" FromRole="CodedValues1" ToRole="CodedValues" />
+    <NavigationProperty Name="Facilities" Relationship="PRORAGIS_MODEL.Facilities_AccessibilityStatus_CodedValue_FK" FromRole="CodedValues" ToRole="Facilities" />
+    <NavigationProperty Name="Facilities1" Relationship="PRORAGIS_MODEL.Facilities_FacilityClass_FK" FromRole="CodedValues" ToRole="Facilities" />
+    <NavigationProperty Name="Facilities11" Relationship="PRORAGIS_MODEL.Facilities_FacilitySize_UOMArea" FromRole="CodedValues" ToRole="Facilities" />
+    <NavigationProperty Name="Facilities111" Relationship="PRORAGIS_MODEL.Facilities_FacilityType_FK" FromRole="CodedValues" ToRole="Facilities" />
+    <NavigationProperty Name="Facilities1111" Relationship="PRORAGIS_MODEL.Facilities_IndoorOutdoor_FK" FromRole="CodedValues" ToRole="Facilities" />
+    <NavigationProperty Name="Facilities11111" Relationship="PRORAGIS_MODEL.Facilities_Length_UOMDistance" FromRole="CodedValues" ToRole="Facilities" />
+    <NavigationProperty Name="Facilities111111" Relationship="PRORAGIS_MODEL.Facilities_Width_UOMDistance" FromRole="CodedValues" ToRole="Facilities" />
+    <NavigationProperty Name="NRPA_Items" Relationship="PRORAGIS_MODEL.NRPAItems_AcquisitionMethod_CodedValue_FK" FromRole="CodedValues" ToRole="NRPA_Items" />
+    <NavigationProperty Name="NRPA_Items1" Relationship="PRORAGIS_MODEL.NRPAItems_AcquisitionSource_CodedValue_FK" FromRole="CodedValues" ToRole="NRPA_Items" />
+    <NavigationProperty Name="NRPA_Items11" Relationship="PRORAGIS_MODEL.NRPAItems_AgencyType_FK" FromRole="CodedValues" ToRole="NRPA_Items" />
+    <NavigationProperty Name="NRPA_Items111" Relationship="PRORAGIS_MODEL.NRPAItems_OtherProtections_CodedValue_FK" FromRole="CodedValues" ToRole="NRPA_Items" />
+    <NavigationProperty Name="NRPA_Items1111" Relationship="PRORAGIS_MODEL.NRPAItems_OwnerType_CodedValue_FK" FromRole="CodedValues" ToRole="NRPA_Items" />
+    <NavigationProperty Name="NRPA_Items11111" Relationship="PRORAGIS_MODEL.NRPAItems_Status_CodedValue_FK" FromRole="CodedValues" ToRole="NRPA_Items" />
+    <NavigationProperty Name="Parks" Relationship="PRORAGIS_MODEL.Parks_AcreSource_CodedValue_FK" FromRole="CodedValues" ToRole="Parks" />
+    <NavigationProperty Name="Parks1" Relationship="PRORAGIS_MODEL.Parks_DevelopmentSource_CodedValue_FK" FromRole="CodedValues" ToRole="Parks" />
+    <NavigationProperty Name="Parks11" Relationship="PRORAGIS_MODEL.Parks_ManagementPriority_CodedValue_FK" FromRole="CodedValues" ToRole="Parks" />
+    <NavigationProperty Name="Parks111" Relationship="PRORAGIS_MODEL.Parks_Reference_CodedValue_FK" FromRole="CodedValues" ToRole="Parks" />
+    <NavigationProperty Name="Parks1111" Relationship="PRORAGIS_MODEL.Parks_Restrictions_FK" FromRole="CodedValues" ToRole="Parks" />
+    <NavigationProperty Name="Parks11111" Relationship="PRORAGIS_MODEL.Parks_ServiceArea_UOMDistance_FK" FromRole="CodedValues" ToRole="Parks" />
+    <NavigationProperty Name="Trails" Relationship="PRORAGIS_MODEL.Trails_AccessibilityStatus_FK" FromRole="CodedValues" ToRole="Trails" />
+    <NavigationProperty Name="Trails1" Relationship="PRORAGIS_MODEL.Trails_DesignedUse_CodedValue_FK" FromRole="CodedValues" ToRole="Trails" />
+    <NavigationProperty Name="Trails11" Relationship="PRORAGIS_MODEL.Trails_DifficultyRating_CodedValue_FK" FromRole="CodedValues" ToRole="Trails" />
+    <NavigationProperty Name="Trails111" Relationship="PRORAGIS_MODEL.Trails_LengthSource_UOMMeasurementSource_FK" FromRole="CodedValues" ToRole="Trails" />
+    <NavigationProperty Name="Trails1111" Relationship="PRORAGIS_MODEL.Trails_LengthUnits_UOMDistance" FromRole="CodedValues" ToRole="Trails" />
+    <NavigationProperty Name="Trails11111" Relationship="PRORAGIS_MODEL.Trails_MotorizedUse_FK" FromRole="CodedValues" ToRole="Trails" />
+    <NavigationProperty Name="Trails111111" Relationship="PRORAGIS_MODEL.Trails_SystemType_CodedValue_FK" FromRole="CodedValues" ToRole="Trails" />
+    <NavigationProperty Name="Trails1111111" Relationship="PRORAGIS_MODEL.Trails_TrailSurface_Codedvalues_FK" FromRole="CodedValues" ToRole="Trails" />
+    <NavigationProperty Name="Trails11111111" Relationship="PRORAGIS_MODEL.Trails_WidthUnits_UOMDistance_FK" FromRole="CodedValues" ToRole="Trails" />
+  </EntityType>
+  <EntityType Name="Facilities">
+    <Key>
+      <PropertyRef Name="FacilityKey" />
+    </Key>
+    <Property Name="FacilityKey" Type="Int32" Nullable="false" />
+    <Property Name="FacilityID" Type="String" Nullable="true" FixedLength="false" MaxLength="100" Unicode="true" />
+    <Property Name="YearBuilt" Type="Int32" Nullable="true" />
+    <Property Name="FacilitySize" Type="Decimal" Nullable="true" Precision="10" Scale="2" />
+    <Property Name="Length" Type="Decimal" Nullable="true" Precision="10" Scale="2" />
+    <Property Name="Width" Type="Decimal" Nullable="true" Precision="10" Scale="2" />
+    <Property Name="Reservations" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="NRPA_Items" Relationship="PRORAGIS_MODEL.Facilities_NRPAItems_FK" FromRole="Facilities" ToRole="NRPA_Items" />
+    <NavigationProperty Name="CodedValues" Relationship="PRORAGIS_MODEL.Facilities_FacilitySize_UOMArea" FromRole="Facilities" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues1" Relationship="PRORAGIS_MODEL.Facilities_Length_UOMDistance" FromRole="Facilities" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11" Relationship="PRORAGIS_MODEL.Facilities_Width_UOMDistance" FromRole="Facilities" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues111" Relationship="PRORAGIS_MODEL.Facilities_FacilityClass_FK" FromRole="Facilities" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues1111" Relationship="PRORAGIS_MODEL.Facilities_FacilityType_FK" FromRole="Facilities" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11111" Relationship="PRORAGIS_MODEL.Facilities_IndoorOutdoor_FK" FromRole="Facilities" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues111111" Relationship="PRORAGIS_MODEL.Facilities_AccessibilityStatus_CodedValue_FK" FromRole="Facilities" ToRole="CodedValues" />
+  </EntityType>
+  <EntityType Name="NRPA_Items">
+    <Key>
+      <PropertyRef Name="ItemKey" />
+    </Key>
+    <Property Name="ItemKey" Type="Int32" Nullable="false" />
+    <Property Name="ParkKey" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="StatusComment" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="AcquistionComment" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="ProtectionComment" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="LastEditDate" Type="DateTime" Nullable="true" Precision="0" />
+    <Property Name="YearOpen" Type="Int32" Nullable="true" />
+    <Property Name="Description" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="LWCFProtection" Type="Boolean" Nullable="false" />
+    <Property Name="LastEditor" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="Owner" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="ManagingAgency" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <NavigationProperty Name="Facilities" Relationship="PRORAGIS_MODEL.Facilities_NRPAItems_FK" FromRole="NRPA_Items" ToRole="Facilities" />
+    <NavigationProperty Name="Parks" Relationship="PRORAGIS_MODEL.Parks_NRPAItems_FK" FromRole="NRPA_Items" ToRole="Parks" />
+    <NavigationProperty Name="Trails" Relationship="PRORAGIS_MODEL.Trails_NRPAItems_FK" FromRole="NRPA_Items" ToRole="Trails" />
+    <NavigationProperty Name="CodedValues" Relationship="PRORAGIS_MODEL.NRPAItems_Status_CodedValue_FK" FromRole="NRPA_Items" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues1" Relationship="PRORAGIS_MODEL.NRPAItems_AcquisitionSource_CodedValue_FK" FromRole="NRPA_Items" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11" Relationship="PRORAGIS_MODEL.NRPAItems_AcquisitionMethod_CodedValue_FK" FromRole="NRPA_Items" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues111" Relationship="PRORAGIS_MODEL.NRPAItems_OtherProtections_CodedValue_FK" FromRole="NRPA_Items" ToRole="CodedValues" />
+    <NavigationProperty Name="Addresses" Relationship="PRORAGIS_MODEL.NRPA_Items_Addresses_FK" FromRole="NRPA_Items" ToRole="Addresses" />
+    <NavigationProperty Name="CodedValues1111" Relationship="PRORAGIS_MODEL.NRPAItems_AgencyType_FK" FromRole="NRPA_Items" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11111" Relationship="PRORAGIS_MODEL.NRPAItems_OwnerType_CodedValue_FK" FromRole="NRPA_Items" ToRole="CodedValues" />
+  </EntityType>
+  <EntityType Name="Parks">
+    <Key>
+      <PropertyRef Name="ParkKey" />
+    </Key>
+    <Property Name="ParkKey" Type="Int32" Nullable="false" />
+    <Property Name="ParkID" Type="String" Nullable="true" FixedLength="false" MaxLength="100" Unicode="true" />
+    <Property Name="Park_ID" Type="Int32" Nullable="true" />
+    <Property Name="ReferenceComment" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="Acreage" Type="Decimal" Nullable="true" Precision="8" Scale="4" />
+    <Property Name="ParkType" Type="String" Nullable="true" FixedLength="false" MaxLength="100" Unicode="true" />
+    <Property Name="DevelopmentComments" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="Unit" Type="String" Nullable="true" FixedLength="false" MaxLength="50" Unicode="true" />
+    <Property Name="Unit_ID" Type="String" Nullable="true" FixedLength="false" MaxLength="50" Unicode="true" />
+    <Property Name="Unit_Acreage" Type="Int32" Nullable="true" />
+    <NavigationProperty Name="CodedValues" Relationship="PRORAGIS_MODEL.Parks_Reference_CodedValue_FK" FromRole="Parks" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues1" Relationship="PRORAGIS_MODEL.Parks_AcreSource_CodedValue_FK" FromRole="Parks" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11" Relationship="PRORAGIS_MODEL.Parks_ServiceArea_UOMDistance_FK" FromRole="Parks" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues111" Relationship="PRORAGIS_MODEL.Parks_ManagementPriority_CodedValue_FK" FromRole="Parks" ToRole="CodedValues" />
+    <NavigationProperty Name="NRPA_Items" Relationship="PRORAGIS_MODEL.Parks_NRPAItems_FK" FromRole="Parks" ToRole="NRPA_Items" />
+    <NavigationProperty Name="CodedValues1111" Relationship="PRORAGIS_MODEL.Parks_DevelopmentSource_CodedValue_FK" FromRole="Parks" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11111" Relationship="PRORAGIS_MODEL.Parks_Restrictions_FK" FromRole="Parks" ToRole="CodedValues" />
+  </EntityType>
+  <EntityType Name="Trails">
+    <Key>
+      <PropertyRef Name="TrailKey" />
+    </Key>
+    <Property Name="TrailID" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="TrailSystemName" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="SharedName" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="Length" Type="Decimal" Nullable="false" Precision="8" Scale="4" />
+    <Property Name="Width" Type="Decimal" Nullable="false" Precision="8" Scale="3" />
+    <Property Name="UseComment" Type="String" Nullable="true" FixedLength="false" MaxLength="150" Unicode="true" />
+    <Property Name="Hike" Type="Boolean" Nullable="false" />
+    <Property Name="RoadBike" Type="Boolean" Nullable="false" />
+    <Property Name="MountainBike" Type="Boolean" Nullable="false" />
+    <Property Name="Equestrian" Type="Boolean" Nullable="false" />
+    <Property Name="DogSled" Type="Boolean" Nullable="false" />
+    <Property Name="Snowmobile" Type="Boolean" Nullable="false" />
+    <Property Name="Snowshoe" Type="Boolean" Nullable="false" />
+    <Property Name="CrossCountrySki" Type="Boolean" Nullable="false" />
+    <Property Name="WatercraftMotorized" Type="Boolean" Nullable="false" />
+    <Property Name="WatercraftNonmotorized" Type="Boolean" Nullable="false" />
+    <Property Name="Portage" Type="Boolean" Nullable="false" />
+    <Property Name="ATV" Type="Boolean" Nullable="false" />
+    <Property Name="FourWD" Type="Boolean" Nullable="false" />
+    <Property Name="Motorcycle" Type="Boolean" Nullable="false" />
+    <Property Name="ParkTrail" Type="Boolean" Nullable="false" />
+    <Property Name="OnStreetBike" Type="Boolean" Nullable="false" />
+    <Property Name="TrailKey" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NRPA_Items" Relationship="PRORAGIS_MODEL.Trails_NRPAItems_FK" FromRole="Trails" ToRole="NRPA_Items" />
+    <NavigationProperty Name="CodedValues" Relationship="PRORAGIS_MODEL.Trails_SystemType_CodedValue_FK" FromRole="Trails" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues1" Relationship="PRORAGIS_MODEL.Trails_LengthUnits_UOMDistance" FromRole="Trails" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11" Relationship="PRORAGIS_MODEL.Trails_LengthSource_UOMMeasurementSource_FK" FromRole="Trails" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues111" Relationship="PRORAGIS_MODEL.Trails_TrailSurface_Codedvalues_FK" FromRole="Trails" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues1111" Relationship="PRORAGIS_MODEL.Trails_DifficultyRating_CodedValue_FK" FromRole="Trails" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11111" Relationship="PRORAGIS_MODEL.Trails_DesignedUse_CodedValue_FK" FromRole="Trails" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues111111" Relationship="PRORAGIS_MODEL.Trails_AccessibilityStatus_FK" FromRole="Trails" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues1111111" Relationship="PRORAGIS_MODEL.Trails_MotorizedUse_FK" FromRole="Trails" ToRole="CodedValues" />
+    <NavigationProperty Name="CodedValues11111111" Relationship="PRORAGIS_MODEL.Trails_WidthUnits_UOMDistance_FK" FromRole="Trails" ToRole="CodedValues" />
+  </EntityType>
+  <Association Name="CV_ParentKey_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="CodedValues1" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="*" />
+  </Association>
+  <Association Name="Facilities_AccessibilityStatus_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Facilities" Type="PRORAGIS_MODEL.Facilities" Multiplicity="*" />
+  </Association>
+  <Association Name="Facilities_FacilityClass_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Facilities" Type="PRORAGIS_MODEL.Facilities" Multiplicity="*" />
+  </Association>
+  <Association Name="Facilities_FacilitySize_UOMArea">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Facilities" Type="PRORAGIS_MODEL.Facilities" Multiplicity="*" />
+  </Association>
+  <Association Name="Facilities_FacilityType_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Facilities" Type="PRORAGIS_MODEL.Facilities" Multiplicity="*" />
+  </Association>
+  <Association Name="Facilities_IndoorOutdoor_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Facilities" Type="PRORAGIS_MODEL.Facilities" Multiplicity="*" />
+  </Association>
+  <Association Name="Facilities_Length_UOMDistance">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Facilities" Type="PRORAGIS_MODEL.Facilities" Multiplicity="*" />
+  </Association>
+  <Association Name="Facilities_NRPAItems_FK">
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="1" />
+    <End Role="Facilities" Type="PRORAGIS_MODEL.Facilities" Multiplicity="*" />
+  </Association>
+  <Association Name="Facilities_Width_UOMDistance">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Facilities" Type="PRORAGIS_MODEL.Facilities" Multiplicity="*" />
+  </Association>
+  <Association Name="NRPA_Items_Addresses_FK">
+    <End Role="Addresses" Type="PRORAGIS_MODEL.Addresses" Multiplicity="0..1" />
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="*" />
+  </Association>
+  <Association Name="NRPAItems_AcquisitionMethod_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="*" />
+  </Association>
+  <Association Name="NRPAItems_AcquisitionSource_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="*" />
+  </Association>
+  <Association Name="NRPAItems_AgencyType_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="*" />
+  </Association>
+  <Association Name="NRPAItems_OtherProtections_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="*" />
+  </Association>
+  <Association Name="NRPAItems_OwnerType_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="*" />
+  </Association>
+  <Association Name="NRPAItems_Status_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="*" />
+  </Association>
+  <Association Name="Parks_AcreSource_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Parks" Type="PRORAGIS_MODEL.Parks" Multiplicity="*" />
+  </Association>
+  <Association Name="Parks_DevelopmentSource_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Parks" Type="PRORAGIS_MODEL.Parks" Multiplicity="*" />
+  </Association>
+  <Association Name="Parks_ManagementPriority_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Parks" Type="PRORAGIS_MODEL.Parks" Multiplicity="*" />
+  </Association>
+  <Association Name="Parks_NRPAItems_FK">
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="1" />
+    <End Role="Parks" Type="PRORAGIS_MODEL.Parks" Multiplicity="*" />
+  </Association>
+  <Association Name="Parks_Reference_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Parks" Type="PRORAGIS_MODEL.Parks" Multiplicity="*" />
+  </Association>
+  <Association Name="Parks_Restrictions_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Parks" Type="PRORAGIS_MODEL.Parks" Multiplicity="*" />
+  </Association>
+  <Association Name="Parks_ServiceArea_UOMDistance_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Parks" Type="PRORAGIS_MODEL.Parks" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_AccessibilityStatus_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_DesignedUse_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_DifficultyRating_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_LengthSource_UOMMeasurementSource_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_LengthUnits_UOMDistance">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_MotorizedUse_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_NRPAItems_FK">
+    <End Role="NRPA_Items" Type="PRORAGIS_MODEL.NRPA_Items" Multiplicity="1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_SystemType_CodedValue_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="0..1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_TrailSurface_Codedvalues_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+  <Association Name="Trails_WidthUnits_UOMDistance_FK">
+    <End Role="CodedValues" Type="PRORAGIS_MODEL.CodedValues" Multiplicity="1" />
+    <End Role="Trails" Type="PRORAGIS_MODEL.Trails" Multiplicity="*" />
+  </Association>
+</Schema>

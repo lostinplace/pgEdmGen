@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="PRORAGIS_MODELstoreContainer" CdmEntityContainer="PRORAGIS_MODELContext">
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="PRORAGIS_MODEL.Addresses">
+        <MappingFragment StoreEntitySet="Addresses">
+          <ScalarProperty Name="AddressKey" ColumnName="AddressKey" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+          <ScalarProperty Name="StreetName" ColumnName="StreetName" />
+          <ScalarProperty Name="StreetType" ColumnName="StreetType" />
+          <ScalarProperty Name="PostalCode" ColumnName="PostalCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodedValues">
+      <EntityTypeMapping TypeName="PRORAGIS_MODEL.CodedValues">
+        <MappingFragment StoreEntitySet="CodedValues">
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="CodeKey" ColumnName="CodeKey" />
+          <ScalarProperty Name="CategoryValue" ColumnName="CategoryValue" />
+          <ScalarProperty Name="CategoryDescription" ColumnName="CategoryDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Facilities">
+      <EntityTypeMapping TypeName="PRORAGIS_MODEL.Facilities">
+        <MappingFragment StoreEntitySet="Facilities">
+          <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+          <ScalarProperty Name="FacilityID" ColumnName="FacilityID" />
+          <ScalarProperty Name="YearBuilt" ColumnName="YearBuilt" />
+          <ScalarProperty Name="FacilitySize" ColumnName="FacilitySize" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Reservations" ColumnName="Reservations" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NRPA_Items">
+      <EntityTypeMapping TypeName="PRORAGIS_MODEL.NRPA_Items">
+        <MappingFragment StoreEntitySet="NRPA_Items">
+          <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+          <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StatusComment" ColumnName="StatusComment" />
+          <ScalarProperty Name="AcquistionComment" ColumnName="AcquistionComment" />
+          <ScalarProperty Name="ProtectionComment" ColumnName="ProtectionComment" />
+          <ScalarProperty Name="LastEditDate" ColumnName="LastEditDate" />
+          <ScalarProperty Name="YearOpen" ColumnName="YearOpen" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LWCFProtection" ColumnName="LWCFProtection" />
+          <ScalarProperty Name="LastEditor" ColumnName="LastEditor" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="ManagingAgency" ColumnName="ManagingAgency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parks">
+      <EntityTypeMapping TypeName="PRORAGIS_MODEL.Parks">
+        <MappingFragment StoreEntitySet="Parks">
+          <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+          <ScalarProperty Name="ParkID" ColumnName="ParkID" />
+          <ScalarProperty Name="Park_ID" ColumnName="Park_ID" />
+          <ScalarProperty Name="ReferenceComment" ColumnName="ReferenceComment" />
+          <ScalarProperty Name="Acreage" ColumnName="Acreage" />
+          <ScalarProperty Name="ParkType" ColumnName="ParkType" />
+          <ScalarProperty Name="DevelopmentComments" ColumnName="DevelopmentComments" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="Unit_ID" ColumnName="Unit_ID" />
+          <ScalarProperty Name="Unit_Acreage" ColumnName="Unit_Acreage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trails">
+      <EntityTypeMapping TypeName="PRORAGIS_MODEL.Trails">
+        <MappingFragment StoreEntitySet="Trails">
+          <ScalarProperty Name="TrailID" ColumnName="TrailID" />
+          <ScalarProperty Name="TrailSystemName" ColumnName="TrailSystemName" />
+          <ScalarProperty Name="SharedName" ColumnName="SharedName" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="UseComment" ColumnName="UseComment" />
+          <ScalarProperty Name="Hike" ColumnName="Hike" />
+          <ScalarProperty Name="RoadBike" ColumnName="RoadBike" />
+          <ScalarProperty Name="MountainBike" ColumnName="MountainBike" />
+          <ScalarProperty Name="Equestrian" ColumnName="Equestrian" />
+          <ScalarProperty Name="DogSled" ColumnName="DogSled" />
+          <ScalarProperty Name="Snowmobile" ColumnName="Snowmobile" />
+          <ScalarProperty Name="Snowshoe" ColumnName="Snowshoe" />
+          <ScalarProperty Name="CrossCountrySki" ColumnName="CrossCountrySki" />
+          <ScalarProperty Name="WatercraftMotorized" ColumnName="WatercraftMotorized" />
+          <ScalarProperty Name="WatercraftNonmotorized" ColumnName="WatercraftNonmotorized" />
+          <ScalarProperty Name="Portage" ColumnName="Portage" />
+          <ScalarProperty Name="ATV" ColumnName="ATV" />
+          <ScalarProperty Name="FourWD" ColumnName="FourWD" />
+          <ScalarProperty Name="Motorcycle" ColumnName="Motorcycle" />
+          <ScalarProperty Name="ParkTrail" ColumnName="ParkTrail" />
+          <ScalarProperty Name="OnStreetBike" ColumnName="OnStreetBike" />
+          <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="CV_ParentKey_FK" TypeName="PRORAGIS_MODEL.CV_ParentKey_FK" StoreEntitySet="CodedValues">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="ParentKey" />
+      </EndProperty>
+      <EndProperty Name="CodedValues1">
+        <ScalarProperty Name="CodeKey" ColumnName="CodeKey" />
+      </EndProperty>
+      <Condition ColumnName="ParentKey" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Facilities_AccessibilityStatus_CodedValue_FK" TypeName="PRORAGIS_MODEL.Facilities_AccessibilityStatus_CodedValue_FK" StoreEntitySet="Facilities">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="AccessibilityStatus" />
+      </EndProperty>
+      <EndProperty Name="Facilities">
+        <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Facilities_FacilityClass_FK" TypeName="PRORAGIS_MODEL.Facilities_FacilityClass_FK" StoreEntitySet="Facilities">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="FacilityClass" />
+      </EndProperty>
+      <EndProperty Name="Facilities">
+        <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Facilities_FacilitySize_UOMArea" TypeName="PRORAGIS_MODEL.Facilities_FacilitySize_UOMArea" StoreEntitySet="Facilities">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="SizeUnits" />
+      </EndProperty>
+      <EndProperty Name="Facilities">
+        <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+      </EndProperty>
+      <Condition ColumnName="SizeUnits" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Facilities_FacilityType_FK" TypeName="PRORAGIS_MODEL.Facilities_FacilityType_FK" StoreEntitySet="Facilities">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="FacilityType" />
+      </EndProperty>
+      <EndProperty Name="Facilities">
+        <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Facilities_IndoorOutdoor_FK" TypeName="PRORAGIS_MODEL.Facilities_IndoorOutdoor_FK" StoreEntitySet="Facilities">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="IndoorOutdoor" />
+      </EndProperty>
+      <EndProperty Name="Facilities">
+        <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+      </EndProperty>
+      <Condition ColumnName="IndoorOutdoor" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Facilities_Length_UOMDistance" TypeName="PRORAGIS_MODEL.Facilities_Length_UOMDistance" StoreEntitySet="Facilities">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="LengthUnits" />
+      </EndProperty>
+      <EndProperty Name="Facilities">
+        <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+      </EndProperty>
+      <Condition ColumnName="LengthUnits" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Facilities_NRPAItems_FK" TypeName="PRORAGIS_MODEL.Facilities_NRPAItems_FK" StoreEntitySet="Facilities">
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+      <EndProperty Name="Facilities">
+        <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Facilities_Width_UOMDistance" TypeName="PRORAGIS_MODEL.Facilities_Width_UOMDistance" StoreEntitySet="Facilities">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="WidthUnits" />
+      </EndProperty>
+      <EndProperty Name="Facilities">
+        <ScalarProperty Name="FacilityKey" ColumnName="FacilityKey" />
+      </EndProperty>
+      <Condition ColumnName="WidthUnits" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="NRPA_Items_Addresses_FK" TypeName="PRORAGIS_MODEL.NRPA_Items_Addresses_FK" StoreEntitySet="NRPA_Items">
+      <EndProperty Name="Addresses">
+        <ScalarProperty Name="AddressKey" ColumnName="AddressKey" />
+      </EndProperty>
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+      <Condition ColumnName="AddressKey" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="NRPAItems_AcquisitionMethod_CodedValue_FK" TypeName="PRORAGIS_MODEL.NRPAItems_AcquisitionMethod_CodedValue_FK" StoreEntitySet="NRPA_Items">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="AcquisitionMethod" />
+      </EndProperty>
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+      <Condition ColumnName="AcquisitionMethod" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="NRPAItems_AcquisitionSource_CodedValue_FK" TypeName="PRORAGIS_MODEL.NRPAItems_AcquisitionSource_CodedValue_FK" StoreEntitySet="NRPA_Items">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="AcquisitionSource" />
+      </EndProperty>
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+      <Condition ColumnName="AcquisitionSource" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="NRPAItems_AgencyType_FK" TypeName="PRORAGIS_MODEL.NRPAItems_AgencyType_FK" StoreEntitySet="NRPA_Items">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="AgencyType" />
+      </EndProperty>
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="NRPAItems_OtherProtections_CodedValue_FK" TypeName="PRORAGIS_MODEL.NRPAItems_OtherProtections_CodedValue_FK" StoreEntitySet="NRPA_Items">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="OtherProtections" />
+      </EndProperty>
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="NRPAItems_OwnerType_CodedValue_FK" TypeName="PRORAGIS_MODEL.NRPAItems_OwnerType_CodedValue_FK" StoreEntitySet="NRPA_Items">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="OwnerType" />
+      </EndProperty>
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="NRPAItems_Status_CodedValue_FK" TypeName="PRORAGIS_MODEL.NRPAItems_Status_CodedValue_FK" StoreEntitySet="NRPA_Items">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="Status" />
+      </EndProperty>
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Parks_AcreSource_CodedValue_FK" TypeName="PRORAGIS_MODEL.Parks_AcreSource_CodedValue_FK" StoreEntitySet="Parks">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="AcreageSource" />
+      </EndProperty>
+      <EndProperty Name="Parks">
+        <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+      </EndProperty>
+      <Condition ColumnName="AcreageSource" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Parks_DevelopmentSource_CodedValue_FK" TypeName="PRORAGIS_MODEL.Parks_DevelopmentSource_CodedValue_FK" StoreEntitySet="Parks">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="DevelopmentSource" />
+      </EndProperty>
+      <EndProperty Name="Parks">
+        <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+      </EndProperty>
+      <Condition ColumnName="DevelopmentSource" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Parks_ManagementPriority_CodedValue_FK" TypeName="PRORAGIS_MODEL.Parks_ManagementPriority_CodedValue_FK" StoreEntitySet="Parks">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="ManagementPriority" />
+      </EndProperty>
+      <EndProperty Name="Parks">
+        <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Parks_NRPAItems_FK" TypeName="PRORAGIS_MODEL.Parks_NRPAItems_FK" StoreEntitySet="Parks">
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+      <EndProperty Name="Parks">
+        <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Parks_Reference_CodedValue_FK" TypeName="PRORAGIS_MODEL.Parks_Reference_CodedValue_FK" StoreEntitySet="Parks">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="Reference" />
+      </EndProperty>
+      <EndProperty Name="Parks">
+        <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+      </EndProperty>
+      <Condition ColumnName="Reference" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Parks_Restrictions_FK" TypeName="PRORAGIS_MODEL.Parks_Restrictions_FK" StoreEntitySet="Parks">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="Restrictions" />
+      </EndProperty>
+      <EndProperty Name="Parks">
+        <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Parks_ServiceArea_UOMDistance_FK" TypeName="PRORAGIS_MODEL.Parks_ServiceArea_UOMDistance_FK" StoreEntitySet="Parks">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="ServiceArea" />
+      </EndProperty>
+      <EndProperty Name="Parks">
+        <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_AccessibilityStatus_FK" TypeName="PRORAGIS_MODEL.Trails_AccessibilityStatus_FK" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="AccessibilityStatus" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_DesignedUse_CodedValue_FK" TypeName="PRORAGIS_MODEL.Trails_DesignedUse_CodedValue_FK" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="DesignedUse" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_DifficultyRating_CodedValue_FK" TypeName="PRORAGIS_MODEL.Trails_DifficultyRating_CodedValue_FK" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="DifficultyRating" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+      <Condition ColumnName="DifficultyRating" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_LengthSource_UOMMeasurementSource_FK" TypeName="PRORAGIS_MODEL.Trails_LengthSource_UOMMeasurementSource_FK" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="LengthSource" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_LengthUnits_UOMDistance" TypeName="PRORAGIS_MODEL.Trails_LengthUnits_UOMDistance" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="LengthUnits" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_MotorizedUse_FK" TypeName="PRORAGIS_MODEL.Trails_MotorizedUse_FK" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="MotorizedUse" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_NRPAItems_FK" TypeName="PRORAGIS_MODEL.Trails_NRPAItems_FK" StoreEntitySet="Trails">
+      <EndProperty Name="NRPA_Items">
+        <ScalarProperty Name="ItemKey" ColumnName="ItemKey" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_SystemType_CodedValue_FK" TypeName="PRORAGIS_MODEL.Trails_SystemType_CodedValue_FK" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="SystemType" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+      <Condition ColumnName="SystemType" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_TrailSurface_Codedvalues_FK" TypeName="PRORAGIS_MODEL.Trails_TrailSurface_Codedvalues_FK" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="TrailSurface" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="Trails_WidthUnits_UOMDistance_FK" TypeName="PRORAGIS_MODEL.Trails_WidthUnits_UOMDistance_FK" StoreEntitySet="Trails">
+      <EndProperty Name="CodedValues">
+        <ScalarProperty Name="CodeKey" ColumnName="WidthUnits" />
+      </EndProperty>
+      <EndProperty Name="Trails">
+        <ScalarProperty Name="TrailKey" ColumnName="TrailKey" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
