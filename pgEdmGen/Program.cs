@@ -139,14 +139,14 @@ namespace pgEdmGen
       };
 
       informAction("beginning ModelGen for " + args[1]);
-      pgEdmGen.Program.ModelGen(args);
+      resultFiles = pgEdmGen.Program.ModelGen(args);
       informAction("modelgen completed for " + args[1]);
       informAction("validating model " + args[2]+".edmx");
       EdmGen2.EdmGen2.Validate(new string[] { "", args[2] + ".edmx" });
       informAction("validation complete for model " + args[2] + ".edmx");
 
 
-      resultFiles.Add("result.txt", statusWriter.ToString());
+      resultFiles["result.txt"]= statusWriter.ToString();
       return resultFiles;
     }
 
@@ -257,7 +257,7 @@ namespace pgEdmGen
 
       ssdlErrors = essg.GenerateStoreMetadata(
         new List<EntityStoreSchemaFilterEntry>() { 
-          new  EntityStoreSchemaFilterEntry(null,null,null,EntityStoreSchemaFilterObjectTypes.Function,EntityStoreSchemaFilterEffect.Exclude) ,
+          new EntityStoreSchemaFilterEntry(null,null,null,EntityStoreSchemaFilterObjectTypes.Function,EntityStoreSchemaFilterEffect.Exclude) ,
           new EntityStoreSchemaFilterEntry(null,"CreationArea",null,EntityStoreSchemaFilterObjectTypes.All,EntityStoreSchemaFilterEffect.Allow) 
         }
         , version);
