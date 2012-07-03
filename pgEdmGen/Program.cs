@@ -299,7 +299,7 @@ namespace pgEdmGen
       XmlWriter ssdlxw = XmlWriter.Create(ssdl);
       essg.WriteStoreSchema(ssdlxw);
       ssdlxw.Flush();
-
+      //testing commit behavior
       // generate the CSDL
       string csdlNamespace = modelName + "Model";
       string csdlEntityContainerName = modelName + "Entities";
@@ -308,7 +308,7 @@ namespace pgEdmGen
           essg.EntityContainer, csdlNamespace, csdlEntityContainerName);
       emsg.GenerateForeignKeyProperties = includeForeignKeys;
       csdlAndMslErrors = emsg.GenerateMetadata(version);
-
+       
 
       // detect if there are errors or only warnings from csdl/msl generation
       bool hasCsdlErrors = false;
